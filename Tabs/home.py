@@ -1,18 +1,10 @@
-"""This modules contains data about home page"""
-
-# Import necessary modules
 import streamlit as st
 
 def app():
-    """This function create the home page"""
-    
-    # Add title to the home page
+
     st.title("TCC sobre Diabetes")
 
-    # Add image to the home page
     st.image("./images/home.png")
-
-    # Add brief describtion of your web app
     st.markdown(
     """<p style="font-size:20px;">
             O diabetes é uma condição de saúde crônica (de longa duração) que afeta a forma como seu corpo transforma alimentos em energia.
