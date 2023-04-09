@@ -43,6 +43,11 @@ def app(df, X, y):
         ax=sns.scatterplot(x="BloodPressure",y="Insulin",data=df)
         st.pyplot()
 
+    if st.checkbox("Gráfico de Nível de IMC vs Idade"):
+        sns.color_palette("rocket", as_cmap=True)
+        ax=sns.scatterplot(x="BMI",y="Age",data=df)
+        st.pyplot()
+
     if st.checkbox("Mostrar histograma"):
         sns.color_palette("rocket", as_cmap=True)
         ax=sns.histplot(data=df,x="Age",y="BloodPressure")
