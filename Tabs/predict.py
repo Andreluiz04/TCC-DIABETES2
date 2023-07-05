@@ -29,7 +29,7 @@ def app(df, X, y):
 
     if st.button("Predicao"):
         prediction, score = predict(X, y, features)
-        score = score + 0.20 #correction factor
+        score = score #correction factor
         st.info("Previsão realizada com sucesso")
 
         if (prediction == 1):

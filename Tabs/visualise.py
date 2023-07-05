@@ -33,11 +33,6 @@ def app(df, X, y):
         ax=sns.scatterplot(x="Glucose",y="BloodPressure",data=df)
         st.pyplot()
 
-    if st.checkbox("Gráfico de Nível de Pressão Arterial vs Espessura da Pele"):
-        sns.color_palette("rocket", as_cmap=True)
-        ax=sns.scatterplot(x="BloodPressure",y="SkinThickness",data=df)
-        st.pyplot()
-
     if st.checkbox("Gráfico de Nível de Pressão Arterial vs Insulina"):
         sns.color_palette("rocket", as_cmap=True)
         ax=sns.scatterplot(x="BloodPressure",y="Insulin",data=df)
@@ -46,11 +41,6 @@ def app(df, X, y):
     if st.checkbox("Gráfico de Nível de IMC vs Idade"):
         sns.color_palette("rocket", as_cmap=True)
         ax=sns.scatterplot(x="BMI",y="Age",data=df)
-        st.pyplot()
-
-    if st.checkbox("Mostrar histograma"):
-        sns.color_palette("rocket", as_cmap=True)
-        ax=sns.histplot(data=df,x="Age",y="BloodPressure")
         st.pyplot()
 
     if st.checkbox("Plotar Árvore de Decisão"):
